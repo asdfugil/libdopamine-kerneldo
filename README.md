@@ -21,3 +21,8 @@ DYLD_INSERT_LIBRARIES=/var/jb/usr/lib/libdopaminekerneldo.dylib umount /cores
 DYLD_INSERT_LIBRARIES=/var/jb/usr/lib/libdopaminekerneldo.dylib mount_bindfs -o ro /bin /cores
 
 ```
+
+## Warning
+
+The kernel **will** panic if you try to use this on a process that calls exec/fork APIs! (HELP WANTED)
+
